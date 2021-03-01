@@ -17,5 +17,5 @@ This folder consists of all code encountered through examples and exercises from
  - [**count_lines.c**](count_lines.c) - program to count lines in the input
  - [**count_btn.c**](count_btn.c) - program to count blanks, tabs, and lines in the input; **exercise 1.8**
  - [**replace_blanks.c**](replace_blanks.c)- program to replace multiple blank values with one blank value;  **exercise 1.9**
- - [**replace_btc.c**](replace_btc.c)- program to replace tabs with \t, backspace with \b, and backslash with \\; **exercise 1.10**
+ - [**replace_btb.c**](replace_btb.c)- program to replace tabs with \t, backspace with \b, and backslash with \\; **exercise 1.10**
 
