@@ -2,7 +2,7 @@
 
 This folder consists of all code encountered through examples and exercises from chapter 1 of the book. Each program file has comments indicating what the code is doing and expected output. 
 
- - **hello.c**(hello.c) - first program, prints "hello world"
+ - [**hello.c**](hello.c) - first program, prints "hello world"
  - **fahtocel.c**- fahrenheit to celsius converter
  - **fahtocel_float.c** - fahrenheit to celsius converter, output in floating point
  - **fahtocel_table.c** - fahrenheit to celsius converter, output in table format
