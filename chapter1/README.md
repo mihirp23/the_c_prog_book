@@ -23,3 +23,5 @@ This folder consists of all code encountered through examples and exercises from
  - [**count_digits.c**](count_digits.c)- counts digits, white spaces, and other characters in the input
  - [**word_histogram.c**](word_histogram.c)- program to draw a horizontal histogram of the length of the words in input. **exercise 1.13**
  - [**char_histogram.c**](char_histogram.c) - program to draw a horizontal histogram of the frequency of each character in input. **exercise 1.14**
+ - [**power.c**](power.c) - program to computer the base m to the n-th power.
+ - [**fahtocel_func.c**][fahtocel_func.] - fahrenheit to celsius converted, using function to do the conversion. **exercise 1.15**
