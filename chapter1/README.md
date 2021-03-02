@@ -21,3 +21,4 @@ This folder consists of all code encountered through examples and exercises from
  - [**barebones_wc.c**](barebones_wc.c)- barebones version of the unix wc command 
  - [**one_word_per_line.c**](one_word_per_line.c)- program to print its input one word per line; ** exercise 1.12**
 
+
