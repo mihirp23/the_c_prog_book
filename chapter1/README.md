@@ -19,6 +19,6 @@ This folder consists of all code encountered through examples and exercises from
  - [**replace_blanks.c**](replace_blanks.c)- program to replace multiple blank values with one blank value;  **exercise 1.9**
  - [**replace_btb.c**](replace_btb.c)- program to replace tabs with \t, backspace with \b, and backslash with \\; **exercise 1.10**
  - [**barebones_wc.c**](barebones_wc.c)- barebones version of the unix wc command 
- - [**one_word_per_line.c**](one_word_per_line.c)- program to print its input one word per line; ** exercise 1.12**
+ - [**one_word_per_line.c**](one_word_per_line.c)- program to print its input one word per line; **exercise 1.12**
 
 
