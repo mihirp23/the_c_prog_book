@@ -20,5 +20,6 @@ This folder consists of all code encountered through examples and exercises from
  - [**replace_btb.c**](replace_btb.c)- program to replace tabs with \t, backspace with \b, and backslash with \\; **exercise 1.10**
  - [**barebones_wc.c**](barebones_wc.c)- barebones version of the unix wc command 
  - [**one_word_per_line.c**](one_word_per_line.c)- program to print its input one word per line; **exercise 1.12**
-
-
+ - [**count_digits.c**](count_digits.c)- counts digits, white spaces, and other characters in the input
+ - [**word_histogram.c**](word_histogram.c)- program to draw a horizontal histogram of the length of the words in input. **exercise 1.13**
+ - [**char_histogram.c**](char_histogram.c) - program to draw a horizontal histogram of the frequency of each character in input. **exercise 1.14**
