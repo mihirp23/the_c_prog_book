@@ -26,3 +26,6 @@ This folder consists of all code encountered through examples and exercises from
  - [**power.c**](power.c) - program to computer the base m to the n-th power
  - [**fahtocel_func.c**](fahtocel_func.c) - fahrenheit to celsius converted, using function to do the conversion. **exercise 1.15**
  - [**longest_line.c**](longest_line.c) - print longest input line
+ - [**longer_than_80.c**](longer_than_80.c) - prints input lines that are greater than 80 characters. **exercise 1.17**
+ - [**remove_trailers.c**](remove_trailers.c) - remove trailing spaces, tabs, and empty lines from input. **exercise 1.18**
+ - [**reverse_lines.c**](reverse_linesc.c) - reverse lines from the input. **exercise 1.19**

@@ -1,33 +1,23 @@
 #include <stdio.h>
 #define MAXLINE 1000 /* maximum input line size */
+#define MAXCHARS 80  /* max number of chars to check for */
 
 int mygetline(char line[], int maxline);
 void copy(char to[], char from[]);
 
-/* print longest input line */
-/* renamed the function getline() to mygetline() 
-   as there exists a library function with the 
-   same name */
+/* prints input lines that are greater than 80 characters */
 
 int main()
 {
 	int len; 					/* current line length */
-	int max;					/* maximum length seen so far */
 	char line[MAXLINE];			/* current input line */
-	char longest[MAXLINE];		/* longest line saved here */
 	
-	max = 0;
 	while ((len = mygetline(line, MAXLINE)) > 0)
 	{
-		if (len > max) 
+		if (len > MAXCHARS) 
 		{
-			max = len;
-			copy(longest, line);
+            printf("%s\n", line);
 		}
-	}
-	if (max > 0) /* there was a line */
-	{
-		printf("%s", longest);
 	}
 	return 0;
 }

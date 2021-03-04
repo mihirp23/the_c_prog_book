@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <string.h>
 #define MAXLINE 1000 /* maximum input line size */
 
 int mygetline(char line[], int maxline);
 void copy(char to[], char from[]);
 
-/* print longest input line */
+/* Exercise 1.19 */
+/* reverses input lines */
 /* renamed the function getline() to mygetline() 
    as there exists a library function with the 
    same name */
@@ -12,22 +14,21 @@ void copy(char to[], char from[]);
 int main()
 {
 	int len; 					/* current line length */
-	int max;					/* maximum length seen so far */
 	char line[MAXLINE];			/* current input line */
-	char longest[MAXLINE];		/* longest line saved here */
+    char reverse_line[MAXLINE]; /* reversed line */
+    int i, j = 0;
 	
-	max = 0;
 	while ((len = mygetline(line, MAXLINE)) > 0)
 	{
-		if (len > max) 
-		{
-			max = len;
-			copy(longest, line);
-		}
-	}
-	if (max > 0) /* there was a line */
-	{
-		printf("%s", longest);
+        for (i = len - 2; i >= 0; --i)
+        {
+            reverse_line[j] = line[i];
+            ++j; 
+        }
+        reverse_line[j] = '\n';
+        ++j;
+        reverse_line[j] = '\0';
+        printf("%s", reverse_line);
 	}
 	return 0;
 }
@@ -50,12 +51,3 @@ int mygetline(char s[], int lim)
 	return i;
 }
 
-/* copy: copy 'from' into 'to'; assume it is big enough */
-void copy (char to[], char from[])
-{
-	int i;
-	i = 0;
-	while ((to[i] = from[i]) != '\0'){
-		++i;
-	}
-}

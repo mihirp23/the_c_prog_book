@@ -2,32 +2,27 @@
 #define MAXLINE 1000 /* maximum input line size */
 
 int mygetline(char line[], int maxline);
-void copy(char to[], char from[]);
+int remove_trailers(char s[]);
 
-/* print longest input line */
-/* renamed the function getline() to mygetline() 
-   as there exists a library function with the 
-   same name */
+/* Exercise 1.18 */
+/* prints input to output removing trailing blank spaces,
+   tabs, and empty lines */
+/* note : used online resource (learntosolveit.com) to
+          make sense of the solution */
 
 int main()
 {
 	int len; 					/* current line length */
 	int max;					/* maximum length seen so far */
 	char line[MAXLINE];			/* current input line */
-	char longest[MAXLINE];		/* longest line saved here */
-	
+   
 	max = 0;
 	while ((len = mygetline(line, MAXLINE)) > 0)
 	{
-		if (len > max) 
-		{
-			max = len;
-			copy(longest, line);
-		}
-	}
-	if (max > 0) /* there was a line */
-	{
-		printf("%s", longest);
+        if (remove_trailers(line) > 0)
+        {
+            printf("%s", line);
+        }
 	}
 	return 0;
 }
@@ -50,12 +45,23 @@ int mygetline(char s[], int lim)
 	return i;
 }
 
-/* copy: copy 'from' into 'to'; assume it is big enough */
-void copy (char to[], char from[])
+int remove_trailers(char s[])
 {
-	int i;
-	i = 0;
-	while ((to[i] = from[i]) != '\0'){
-		++i;
-	}
+    int i;
+    for (i = 0; s[i] != '\n'; ++i)
+    ;
+    --i;
+
+    for (i > 0; ((s[i] == ' ' || s[i] == '\t')); --i)
+    ; 
+
+    if (i >= 0)
+    {
+        ++i;
+        s[i] = '\n';
+        ++i;
+        s[i] = '\0';
+    }
+    return i;
 }
+
