@@ -28,4 +28,4 @@ This folder consists of all code encountered through examples and exercises from
  - [**longest_line.c**](longest_line.c) - print longest input line
  - [**longer_than_80.c**](longer_than_80.c) - prints input lines that are greater than 80 characters. **exercise 1.17**
  - [**remove_trailers.c**](remove_trailers.c) - remove trailing spaces, tabs, and empty lines from input. **exercise 1.18**
- - [**reverse_lines.c**](reverse_linesc.c) - reverse lines from the input. **exercise 1.19**
+ - [**reverse_lines.c**](reverse_lines.c) - reverse lines from the input. **exercise 1.19**
